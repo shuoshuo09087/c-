@@ -1,34 +1,29 @@
-/*#include <iostream>
-using namespace std;
-
-// main() 是程序开始执行的地方
-
-int main()
-{
-	cout << "Hello World"; // 输出 Hello World
-	return 0;
-}
-*/
 #include <iostream>
- 
-// 函数声明 
-void func(void);
- 
-static int count = 10; /* 全局变量 */
+using namespace std;
  
 int main()
 {
-    while(count--)
-    {
-       func();
-    }
-    return 0;
-}
-// 函数定义
-void func( void )
-{
-    static int i = 5; // 局部静态变量
-    i++;
-    std::cout << "变量 i 为 " << i ;
-    std::cout << " , 变量 count 为 " << count << std::endl;
+   int a = 21;
+   int b = 10;
+   int c;
+ 
+   c = a + b;
+   cout << "Line 1 - c 的值是 " << c << endl ;
+   c = a - b;
+   cout << "Line 2 - c 的值是 " << c << endl ;
+   c = a * b;
+   cout << "Line 3 - c 的值是 " << c << endl ;
+   c = a / b;
+   cout << "Line 4 - c 的值是 " << c << endl ;
+   c = a % b;
+   cout << "Line 5 - c 的值是 " << c << endl ;
+ 
+   int d = 10;   //  测试自增、自减
+   c = d++;
+   cout << "Line 6 - c 的值是 " << c << endl ;
+ 
+   d = 10;    // 重新赋值
+   c = d--;
+   cout << "Line 7 - c 的值是 " << c << endl ;
+   return 0;
 }
